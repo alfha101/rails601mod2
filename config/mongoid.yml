@@ -10,7 +10,7 @@ development:
 test:
   clients:
     default:
-      database: myapp_test
+      database: assignment1_test
       hosts:
         - <%= ENV['MONGO_HOST'] ||= "localhost:27017" %>
       options:
