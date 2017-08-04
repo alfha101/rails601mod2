@@ -1,5 +1,6 @@
 /*
-* SPA Demo stylesheet Manifest file
-*
-*= require bootstrap
-*/
+  * SPA Demo stylesheet Manifest file
+  *
+  *= require bootstrap
+  *= require spa-demo/layout
+  */
