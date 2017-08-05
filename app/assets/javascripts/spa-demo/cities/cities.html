@@ -9,9 +9,18 @@
               ng-model="citiesVM.city.name"
               required="required"/>
     </div>
+
     <button ng-if="!citiesVM.city.id"
             type="submit"
-            ng-click="citiesVM.create()">Create City</button></form>
+            ng-click="citiesVM.create()">Create City</button>
+    <div ng-if="citiesVM.city.id">
+       <button type="submit"
+            ng-click="citiesVM.update()">Update City</button>
+       <button type="submit"
+            ng-click="citiesVM.remove()">Delete City</button>
+    </div>
+  </form>
+
 
   <ul>
       <li ng-repeat="city in citiesVM.cities | orderBy: 'name'">
